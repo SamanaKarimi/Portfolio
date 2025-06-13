@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samana's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo.png" class="logo" alt="Logo" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="button"></label>
+    </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="intro">
+      <h1>I'm <span>Samana</span> Karimi</h1>
+      <p>front-end Developer &amp; UI/UX Designer</p>
+      <p>
+         I'm a front-end developer and UI/UX designer based in Herat, Afghanistan.<br />
+         I specialize in creating web applications and designing user interfaces.
+      </p>
+      <button>Contact Me</button>
+    </div>
+    <div class="img-box">
+      <img src="back-img.png" class="back-img" alt="Background" />
+      <img src="main-img.png" class="main-img" alt="Main" />
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="para">
+      <div class="img-box2">
+        <img src="about.png" class="main-img2" alt="About me" />
+      </div>
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I'm Samana, a front-end developer and UI/UX designer. I have over 2 years of experience in the tech industry,
+          specializing in web development and user interface design. I am passionate about solving complex problems through innovative solutions.
+        </p>
+        <div>
+          <button>Download CV</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>2016-2020: Bachelor of Computer Science - Herat University</li>
+        <li>2006-2016: High School - Mehri High School</li>
+      </ul>
+    </div>
+    <div class="skills-list">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>HTML: 90%</li>
+        <li>CSS: 85%</li>
+        <li>JavaScript: 77%</li>
+        <li>Figma: 87%</li>
+        <li>UI/UX Design: 89%</li>
+        <li>Adobe Illustrator: 90%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="service-list">
+      <div class="service-box">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-pencil-alt"></i>
+        <h3>Content Creation</h3>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-list">
+      <div class="portfolio-item">
+        <img src="User Persona.png" alt="Brand Logo" />
+      </div>
+      <div class="portfolio-item">
+        <img src="coffee.jpg" alt="Web Design" />
+      </div>
+      <div class="portfolio-item">
+        <img src="beauty.jpg" alt="Web Design" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's discuss your project</h3>
+        <i class="fas fa-phone"></i>
+        <p>+123 456 7890</p>
+        <i class="fas fa-envelope"></i>
+        <p>
+          <a href="mailto:samana.karimi@gmail.com">samana.karimi@gmail.com</a>
+        </p>
+        <i class="fas fa-street-view"></i>
+        <p>Herat city, Afghanistan</p>
+      </div>
+      <form class="form">
+       <p>I'm always open for <b>discussion</b></p>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samana. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("theme-toggle");
+  themeToggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+});
+  </script>
+</body>
+</html>
